@@ -41,7 +41,7 @@ export const EditProfileModal = ({
   }, [userprofile, profileMode]); // Initialize profile data if mode is "edit"
 
   const cloudinaryUrl =
-    "https://api.cloudinary.com/v1_1/daklnsxdc/image/upload";
+    "https://api.cloudinary.com/v1_1/dos65ciy5/image/upload";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -54,8 +54,8 @@ export const EditProfileModal = ({
       const file = fileUrl;
       const formData = new FormData();
       formData.append("file", file);
-      formData.append("upload_preset", "publish");
-      formData.append("folder", "publishly");
+      formData.append("upload_preset", "publishly");
+      formData.append("folder", "publish");
 
       try {
         const res = await fetch(cloudinaryUrl, {

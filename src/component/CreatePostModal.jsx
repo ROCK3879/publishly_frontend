@@ -62,7 +62,7 @@ export const CreatePostModal = () => {
   }, [isFetching, editPostObj]);
 
   const cloudinaryUrl =
-    "https://api.cloudinary.com/v1_1/daklnsxdc/image/upload";
+    "https://api.cloudinary.com/v1_1/dos65ciy5/image/upload";
 
   const postHandler = async (e) => {
     e.preventDefault();
@@ -83,8 +83,8 @@ export const CreatePostModal = () => {
           const file = postData?.post_image_url;
           const formData = new FormData();
           formData.append("file", file);
-          formData.append("upload_preset", "publish");
-          formData.append("folder", "publishly");
+          formData.append("upload_preset", "publishly");
+          formData.append("folder", "publish");
 
           try {
             const res = await fetch(cloudinaryUrl, {

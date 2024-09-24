@@ -1,4 +1,6 @@
-import { LineStyle, PermIdentity, Storefront } from "@material-ui/icons";
+import LineStyle from "@mui/icons-material/LineStyle";
+import PermIdentity from "@mui/icons-material/PermIdentity";
+import Storefront from "@mui/icons-material/Storefront";
 import React from "react";
 import { Link } from "react-router-dom";
 import "./sidebar.css";

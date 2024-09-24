@@ -1,4 +1,6 @@
-import { Language, NotificationsNone, Settings } from "@material-ui/icons";
+import Language from "@mui/icons-material/Language";
+import NotificationsNone from "@mui/icons-material/NotificationsNone";
+import Settings from "@mui/icons-material/Settings";
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import "./topbar.css"; // Assuming you have a CSS file for custom styles

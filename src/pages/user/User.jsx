@@ -1,11 +1,6 @@
-import {
-  CalendarToday,
-  LocationSearching,
-  MailOutline,
-  PermIdentity,
-  PhoneAndroid,
-  Publish,
-} from "@material-ui/icons";
+import MailOutline from "@mui/icons-material/MailOutline";
+import PermIdentity from "@mui/icons-material/PermIdentity";
+
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";

@@ -16,7 +16,6 @@ export default function App() {
   console.log("All Profiles", profiles);
 
   useEffect(() => {
-    dispatch(getUsers());
     dispatch(getProfiles());
   }, [token, dispatch]);
 

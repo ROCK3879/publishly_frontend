@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./postlist.css";
-import { DataGrid } from "@material-ui/data-grid";
-import { DeleteOutline } from "@material-ui/icons";
+import { DataGrid } from "@mui/x-data-grid";
+import DeleteOutline from "@mui/icons-material/DeleteOutline";
+
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { getAllPosts } from "../../features/post/helpers";

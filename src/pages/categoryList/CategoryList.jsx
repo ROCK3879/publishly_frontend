@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./categoryList.css";
-import { DataGrid } from "@material-ui/data-grid";
-import { DeleteOutline } from "@material-ui/icons";
+import { DataGrid } from "@mui/x-data-grid";
+import DeleteOutline from "@mui/icons-material/DeleteOutline";
+
 import { Link, useNavigate } from "react-router-dom"; // Import useNavigate for redirection
 import { getAllCategories } from "../../features/post/helpers";
 import { useDispatch, useSelector } from "react-redux";

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./userList.css";
-import { DataGrid } from "@material-ui/data-grid";
+import { DataGrid } from "@mui/x-data-grid";
+import DeleteOutline from "@mui/icons-material/DeleteOutline";
+
 import { getUsers } from "../../features/user/helpers";
 import { useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom"; // Import useNavigate for redirection

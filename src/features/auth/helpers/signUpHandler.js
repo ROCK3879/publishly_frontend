@@ -2,6 +2,7 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { BASE_URL } from "../../../utilities/baseUrl";
 toast.configure();
 
 export const signUpHandler = createAsyncThunk(
@@ -12,16 +13,13 @@ export const signUpHandler = createAsyncThunk(
   ) => {
     try {
       // Make the request to the login API
-      const response = await axios.post(
-        "https://publishly-backend-8e89adfbeaf2.herokuapp.com/api/users/create/",
-        {
-          user_firstname: user_firstname,
-          user_lastname: user_lastname,
-          user_username: user_username,
-          user_email: user_email,
-          password: password,
-        }
-      );
+      const response = await axios.post(`${BASE_URL}/users/create/`, {
+        user_firstname: user_firstname,
+        user_lastname: user_lastname,
+        user_username: user_username,
+        user_email: user_email,
+        password: password,
+      });
       const data = response.data;
 
       // Log the response to verify

@@ -1,12 +1,12 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-
+import { BASE_URL } from "../../../utilities/baseUrl";
 export const editPost = createAsyncThunk(
   "post/editPost",
   async ({ content, url, post_id, token }, { rejectWithValue }) => {
     try {
       const response = await axios.put(
-        `https://publishly-backend-8e89adfbeaf2.herokuapp.com/api/post/update/${post_id}/`,
+        `${BASE_URL}/post/update/${post_id}/`,
         {
           post_content: content,
           post_image_url: url,

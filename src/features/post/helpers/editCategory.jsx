@@ -1,6 +1,6 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-
+import { BASE_URL } from "../../../utilities/baseUrl";
 export const editCategory = createAsyncThunk(
   "post/editCategory",
   async (
@@ -9,7 +9,7 @@ export const editCategory = createAsyncThunk(
   ) => {
     try {
       const response = await axios.put(
-        `https://publishly-backend-8e89adfbeaf2.herokuapp.com/api/category/update/${category_id}/`,
+        `${BASE_URL}/category/update/${category_id}/`,
         {
           category_name: category_name,
           category_slug: category_slug,

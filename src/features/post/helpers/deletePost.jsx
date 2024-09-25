@@ -1,13 +1,11 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-
+import { BASE_URL } from "../../../utilities/baseUrl";
 export const deletePost = createAsyncThunk(
   "post/deletePost",
   async ({ postId, token }, { rejectWithValue }) => {
     try {
-      const response = await axios.delete(
-        `https://publishly-backend-8e89adfbeaf2.herokuapp.com/api/post/${postId}/`
-      );
+      const response = await axios.delete(`${BASE_URL}/post/${postId}/`);
       console.log("Response post", response);
       const data = response.data;
 

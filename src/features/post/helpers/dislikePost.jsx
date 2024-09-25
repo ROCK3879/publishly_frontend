@@ -1,12 +1,12 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-
+import { BASE_URL } from "../../../utilities/baseUrl";
 export const dislikePost = createAsyncThunk(
   "post/dislikePost",
   async ({ postId, user_id, token }, { rejectWithValue }) => {
     try {
       const response = await axios.post(
-        `https://publishly-backend-8e89adfbeaf2.herokuapp.com/api/posts/dislike/${postId}/`,
+        `${BASE_URL}/posts/dislike/${postId}/`,
         {
           user_id: user_id,
         },

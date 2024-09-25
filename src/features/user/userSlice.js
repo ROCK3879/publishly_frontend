@@ -135,45 +135,7 @@ export const userSlice = createSlice({
       state.error = "";
     },
     [followUser.fulfilled]: (state, { payload }) => {
-      // Get the user being followed and the user who is following
-      const followedUserId = payload.followUser.user_id; // ID of the user being followed
-      const followingUserId = payload.currentUser.user_id; // ID of the user following
-
-      // Update the followers list of the followed user
-      state.users = state.users.map((user) => {
-        if (user.user_id === followedUserId) {
-          // If this is the followed user, update their followers list
-          return {
-            ...user,
-            followers: [
-              ...user.followers,
-              {
-                user_id: followingUserId,
-                user_username: payload.currentUser.user_username,
-              },
-            ],
-          };
-        }
-
-        if (user.user_id === followingUserId) {
-          // If this is the current user, update their following list
-          return {
-            ...user,
-            following: [
-              ...user.following,
-              {
-                user_id: followedUserId,
-                user_username: payload.followUser.user_username,
-              },
-            ],
-          };
-        }
-
-        return user;
-      });
-
       state.isLoading = false;
-
       // Show notification
       toast("User Followed", {
         position: toast.POSITION.TOP_CENTER,
@@ -193,21 +155,15 @@ export const userSlice = createSlice({
       state.error = "";
     },
     [unFollowUser.fulfilled]: (state, { payload }) => {
-      state.users = state.users.map((user) => {
-        if (user.username === payload.followUser.username) {
-          return payload.followUser;
-        }
-        if (user.username === payload.user.username) {
-          return payload.user;
-        }
-        return user;
-      });
       state.isLoading = false;
+
+      // Show notification
       toast("User Unfollowed", {
         position: toast.POSITION.TOP_CENTER,
         autoClose: 1000,
       });
     },
+
     [unFollowUser.rejected]: (state, { payload }) => {
       state.isLoading = false;
       state.error = payload;

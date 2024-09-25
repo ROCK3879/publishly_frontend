@@ -1,5 +1,6 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
+import { BASE_URL } from "../../../utilities/baseUrl";
 
 export const createProfile = createAsyncThunk(
   "profile/create",
@@ -9,7 +10,7 @@ export const createProfile = createAsyncThunk(
   ) => {
     try {
       const response = await axios.post(
-        `https://publishly-backend-8e89adfbeaf2.herokuapp.com/api/profile/create/${user_id}/`,
+        `${BASE_URL}/profile/create/${user_id}/`,
         {
           user_profile_picture: profilePicture,
           user_website: user_website,

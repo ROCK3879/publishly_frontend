@@ -1,12 +1,12 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-
+import { BASE_URL } from "../../../utilities/baseUrl";
 export const deleteCategory = createAsyncThunk(
   "post/deleteCategory",
   async ({ category_id }, { rejectWithValue }) => {
     try {
       const response = await axios.delete(
-        `https://publishly-backend-8e89adfbeaf2.herokuapp.com/api/category/${category_id}/`
+        `${BASE_URL}/category/${category_id}/`
       );
       console.log("Response Category", response);
       const data = response.data;

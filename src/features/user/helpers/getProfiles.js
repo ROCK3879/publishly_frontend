@@ -1,13 +1,11 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-
+import { BASE_URL } from "../../../utilities/baseUrl";
 export const getProfiles = createAsyncThunk(
   "user/getProfiles",
   async (_, { rejectWithValue }) => {
     try {
-      const response = await axios.get(
-        "https://publishly-backend-8e89adfbeaf2.herokuapp.com/api/profiles/"
-      );
+      const response = await axios.get(`${BASE_URL}/profiles/`);
       console.log("Response profiles", response);
       const data = response.data;
 

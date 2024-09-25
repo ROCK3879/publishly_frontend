@@ -1,6 +1,6 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-
+import { BASE_URL } from "../../../utilities/baseUrl";
 export const updateUser = createAsyncThunk(
   "user/update",
   async (
@@ -9,7 +9,7 @@ export const updateUser = createAsyncThunk(
   ) => {
     try {
       const response = await axios.put(
-        `https://publishly-backend-8e89adfbeaf2.herokuapp.com/api/profile/update/${profile_id}/`,
+        `${BASE_URL}/profile/update/${profile_id}/`,
         {
           user_profile_picture: profilePicture,
           user_website: user_website,

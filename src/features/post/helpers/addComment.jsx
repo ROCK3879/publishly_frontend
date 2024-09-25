@@ -1,6 +1,6 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-
+import { BASE_URL } from "../../../utilities/baseUrl";
 export const addComment = createAsyncThunk(
   "/post/addComment",
   async (
@@ -9,7 +9,7 @@ export const addComment = createAsyncThunk(
   ) => {
     try {
       const response = await axios.post(
-        `https://publishly-backend-8e89adfbeaf2.herokuapp.com/api/comment/create/${post_id}/`,
+        `${BASE_URL}/comment/create/${post_id}/`,
         {
           comment_content: comment_content,
           commented_by: commented_by,

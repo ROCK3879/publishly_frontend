@@ -1,17 +1,14 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-
+import { BASE_URL } from "../../../utilities/baseUrl";
 export const createCategory = createAsyncThunk(
   "post/createCategory",
   async ({ category_name, category_slug }, { rejectWithValue }) => {
     try {
-      const response = await axios.post(
-        "https://publishly-backend-8e89adfbeaf2.herokuapp.com/api/category/create/",
-        {
-          category_name: category_name,
-          category_slug: category_slug,
-        }
-      );
+      const response = await axios.post(`${BASE_URL}/category/create/`, {
+        category_name: category_name,
+        category_slug: category_slug,
+      });
       console.log("Response from  create category", response);
       const data = response.data;
 

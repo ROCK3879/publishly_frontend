@@ -30,8 +30,8 @@ export const UserDetails = ({ currentUser }) => {
 
   // Ensure the UI re-renders when the follow/unfollow action happens
   useEffect(() => {
-    dispatch(getUsers()); // Ensure users are fetched
-  }, [users]);
+    dispatch(getUsers()); // Ensure users are fetched only once
+  }, []);
 
   // Handle the follow and unfollow button click events
   const handleFollow = () => {
@@ -42,6 +42,7 @@ export const UserDetails = ({ currentUser }) => {
         token,
       })
     );
+    dispatch(getUsers());
   };
 
   const handleUnfollow = () => {
@@ -52,6 +53,7 @@ export const UserDetails = ({ currentUser }) => {
         token,
       })
     );
+    dispatch(getUsers());
   };
 
   return (

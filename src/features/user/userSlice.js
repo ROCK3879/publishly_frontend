@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import {
   getUsers,
+  deleteUser,
   updateUser,
   getProfiles,
   followUser,
@@ -90,7 +91,20 @@ export const userSlice = createSlice({
         autoClose: 1000,
       });
     },
-
+    //Delete user
+    [deleteUser.fulfilled]: (state, { payload }) => {
+      // Remove the deleted user from the users array
+      state.users = state.users.filter(
+        (user) => user.user_id !== payload.user_id
+      );
+      toast("User Deleted", {
+        position: toast.POSITION.TOP_CENTER,
+        autoClose: 1000,
+      });
+    },
+    [deleteUser.rejected]: (state, { payload }) => {
+      state.error = payload;
+    },
     // updateUser
 
     [updateUser.pending]: (state) => {

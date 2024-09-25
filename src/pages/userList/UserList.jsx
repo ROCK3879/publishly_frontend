@@ -7,7 +7,7 @@ import { getUsers } from "../../features/user/helpers";
 import { useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom"; // Import useNavigate for redirection
 import { useSelector } from "react-redux";
-
+import { deleteUser } from "../../features/user/helpers";
 export default function UserList() {
   const {
     posts: { posts },
@@ -24,13 +24,27 @@ export default function UserList() {
   useEffect(() => {
     dispatch(getUsers()); // Fetch users
   }, [dispatch]);
+  const handleDelete = (user_id) => {
+    console.log("user_id ", user_id);
+    // Optimistically update the UI by removing the user locally
+    setData(data.filter((user) => user.user_id !== user_id));
+
+    // Dispatch the delete action to remove the user from the backend
+    dispatch(deleteUser({ user_id: user_id }))
+      .then(() => {
+        console.log(`User with id ${user_id} deleted successfully.`);
+      })
+      .catch((error) => {
+        console.error("Error deleting category:", error);
+      });
+  };
 
   const columns = [
     { field: "id", headerName: "ID", width: 90 }, // Using user_id as id
     {
       field: "user",
       headerName: "Username",
-      width: 230,
+      width: 150,
       renderCell: (params) => {
         return (
           <div className="userListUser">
@@ -40,7 +54,7 @@ export default function UserList() {
         );
       },
     },
-    { field: "user_email", headerName: "Email", width: 230 },
+    { field: "user_email", headerName: "Email", width: 150 },
     { field: "user_firstname", headerName: "First Name", width: 150 },
     { field: "user_lastname", headerName: "Last Name", width: 150 },
     {
@@ -65,6 +79,10 @@ export default function UserList() {
             <Link to={`/admin/user/${params.row.id}`}>
               <button className="userListEdit">View</button>
             </Link>
+            <DeleteOutline
+              className="userListDelete"
+              onClick={() => handleDelete(params.row.id)}
+            />
           </>
         );
       },

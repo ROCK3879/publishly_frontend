@@ -5,7 +5,7 @@ export const deleteComment = createAsyncThunk(
   async ({ comment_id }, { rejectWithValue }) => {
     try {
       const response = await axios.delete(
-        `http://127.0.0.1:8000/api/comment/${comment_id}/`
+        `https://publishly-backend-8e89adfbeaf2.herokuapp.com/api/comment/${comment_id}/`
       );
       console.log("Response post", response);
       const data = response.data;

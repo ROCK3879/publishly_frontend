@@ -6,7 +6,7 @@ export const editPost = createAsyncThunk(
   async ({ content, url, post_id, token }, { rejectWithValue }) => {
     try {
       const response = await axios.put(
-        `http://127.0.0.1:8000/api/post/update/${post_id}/`,
+        `https://publishly-backend-8e89adfbeaf2.herokuapp.com/api/post/update/${post_id}/`,
         {
           post_content: content,
           post_image_url: url,

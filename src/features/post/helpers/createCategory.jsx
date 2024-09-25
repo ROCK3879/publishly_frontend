@@ -6,7 +6,7 @@ export const createCategory = createAsyncThunk(
   async ({ category_name, category_slug }, { rejectWithValue }) => {
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8000/api/category/create/",
+        "https://publishly-backend-8e89adfbeaf2.herokuapp.com/api/category/create/",
         {
           category_name: category_name,
           category_slug: category_slug,

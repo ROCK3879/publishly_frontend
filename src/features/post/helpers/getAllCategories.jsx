@@ -5,7 +5,9 @@ export const getAllCategories = createAsyncThunk(
   "post/categories",
   async (_, { rejectWithValue }) => {
     try {
-      const response = await axios.get("http://127.0.0.1:8000/api/categories/");
+      const response = await axios.get(
+        "https://publishly-backend-8e89adfbeaf2.herokuapp.com/api/categories/"
+      );
       console.log("Response categories", response);
       const data = response.data;
 

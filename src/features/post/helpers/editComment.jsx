@@ -9,7 +9,7 @@ export const editComment = createAsyncThunk(
   ) => {
     try {
       const response = await axios.put(
-        `http://127.0.0.1:8000/api/comment/update/${comment_id}/`,
+        `https://publishly-backend-8e89adfbeaf2.herokuapp.com/api/comment/update/${comment_id}/`,
         {
           comment_content: comment_content,
           commented_by: commented_by,

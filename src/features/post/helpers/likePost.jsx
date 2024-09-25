@@ -6,7 +6,7 @@ export const likePost = createAsyncThunk(
   async ({ postId, user_id, token }, { rejectWithValue }) => {
     try {
       const response = await axios.post(
-        `http://127.0.0.1:8000/api/posts/like/${postId}/`,
+        `https://publishly-backend-8e89adfbeaf2.herokuapp.com/posts/like/${postId}/`,
         {
           user_id: user_id,
         },

@@ -9,7 +9,7 @@ export const addComment = createAsyncThunk(
   ) => {
     try {
       const response = await axios.post(
-        `http://127.0.0.1:8000/api/comment/create/${post_id}/`,
+        `https://publishly-backend-8e89adfbeaf2.herokuapp.com/api/comment/create/${post_id}/`,
         {
           comment_content: comment_content,
           commented_by: commented_by,

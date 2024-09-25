@@ -9,7 +9,7 @@ export const editCategory = createAsyncThunk(
   ) => {
     try {
       const response = await axios.put(
-        `http://127.0.0.1:8000/api/category/update/${category_id}/`,
+        `https://publishly-backend-8e89adfbeaf2.herokuapp.com/api/category/update/${category_id}/`,
         {
           category_name: category_name,
           category_slug: category_slug,

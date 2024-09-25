@@ -9,7 +9,7 @@ export const createPost = createAsyncThunk(
   ) => {
     try {
       const response = await axios.post(
-        `http://127.0.0.1:8000/api/post/create/${user_id}/`,
+        `https://publishly-backend-8e89adfbeaf2.herokuapp.com/api/post/create/${user_id}/`,
         {
           post_content: content,
           post_image_url: url,

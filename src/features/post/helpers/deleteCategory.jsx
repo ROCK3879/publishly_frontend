@@ -6,7 +6,7 @@ export const deleteCategory = createAsyncThunk(
   async ({ category_id }, { rejectWithValue }) => {
     try {
       const response = await axios.delete(
-        `http://127.0.0.1:8000/api/category/${category_id}/`
+        `https://publishly-backend-8e89adfbeaf2.herokuapp.com/api/category/${category_id}/`
       );
       console.log("Response Category", response);
       const data = response.data;

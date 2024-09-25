@@ -6,7 +6,7 @@ export const deletePost = createAsyncThunk(
   async ({ postId, token }, { rejectWithValue }) => {
     try {
       const response = await axios.delete(
-        `http://127.0.0.1:8000/api/post/${postId}/`
+        `https://publishly-backend-8e89adfbeaf2.herokuapp.com/api/post/${postId}/`
       );
       console.log("Response post", response);
       const data = response.data;

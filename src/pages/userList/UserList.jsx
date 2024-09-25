@@ -105,7 +105,7 @@ export default function UserList() {
     user_email: user.user_email,
     user_firstname: user.user_firstname || "N/A",
     user_lastname: user.user_lastname || "N/A",
-    followers: user.followers || [], // Ensure followers is an array or default to an empty array
+    followers: user.followers.length || [], // Ensure followers is an array or default to an empty array
   }));
 
   return (

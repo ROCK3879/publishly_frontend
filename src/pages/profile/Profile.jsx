@@ -110,7 +110,7 @@ export const Profile = () => {
                 <div className="flex mx-auto gap-8">
                   <img
                     src={userprofile?.user_profile_picture}
-                    className="w-32 h-32 rounded-full"
+                    className="w-32 h-32 rounded-full object-cover sm:w-24 sm:h-24 md:w-32 md:h-32"
                     alt="avatar"
                   />
 

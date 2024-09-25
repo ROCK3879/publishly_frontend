@@ -44,8 +44,7 @@ export default function UserList() {
       field: "comments",
       headerName: "Comments",
       width: 150,
-      valueGetter: (params) =>
-        params.row && params.row.comments ? params.row.comments.length : 0, // Check if row and comments exist
+      valueGetter: (params) => params.row.comments.length, // Show count of comments
     },
     {
       field: "action",

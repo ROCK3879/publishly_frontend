@@ -47,7 +47,13 @@ export default function UserList() {
       field: "followers",
       headerName: "Followers",
       width: 150,
-      valueGetter: (params) => params.row.followers.length, // Show count of followers
+      valueGetter: (params) => {
+        // Ensure params.row and params.row.followers exist
+        if (params.row && Array.isArray(params.row.followers)) {
+          return params.row.followers.length;
+        }
+        return 0; // Default to 0 followers if followers is undefined
+      },
     },
     {
       field: "action",

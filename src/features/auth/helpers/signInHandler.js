@@ -10,7 +10,7 @@ export const signInHandler = createAsyncThunk(
     try {
       // Make the request to the login API
       const response = await axios.post(
-        "http://127.0.0.1:8000/api/user/login/",
+        "https://publishly-backend-8e89adfbeaf2.herokuapp.com/api/user/login/",
         {
           user_email,
           password,

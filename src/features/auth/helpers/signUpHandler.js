@@ -13,7 +13,7 @@ export const signUpHandler = createAsyncThunk(
     try {
       // Make the request to the login API
       const response = await axios.post(
-        "http://127.0.0.1:8000/api/users/create/",
+        "https://publishly-backend-8e89adfbeaf2.herokuapp.com/api/users/create/",
         {
           user_firstname: user_firstname,
           user_lastname: user_lastname,

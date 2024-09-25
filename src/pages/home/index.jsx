@@ -326,7 +326,7 @@ export default function Home() {
                         <div className="flex-shrink-0">
                           <img
                             className="h-6 w-6 rounded-full"
-                            src="https://res-console.cloudinary.com/dos65ciy5/thumbnails/v1/image/upload/v1727120679/cHVibGlzaC9qZXBscTZ2dGVxYzlvZzUzZ2lrdQ==/drilldown"
+                            src="https://res.cloudinary.com/dos65ciy5/image/upload/v1727258973/publish/hr5zpmo5fhsh5oyhp3pd.png"
                             alt="User avatar"
                           />
                         </div>

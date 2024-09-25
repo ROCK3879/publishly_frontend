@@ -5,7 +5,9 @@ export const getUsers = createAsyncThunk(
   "user/getUsers",
   async (_, { rejectWithValue }) => {
     try {
-      const response = await axios.get("http://127.0.0.1:8000/api/users/");
+      const response = await axios.get(
+        "https://publishly-backend-8e89adfbeaf2.herokuapp.com/api/users/"
+      );
       console.log("All Users", response);
       const data = response.data;
 

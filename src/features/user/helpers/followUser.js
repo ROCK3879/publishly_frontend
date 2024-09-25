@@ -5,7 +5,7 @@ export const followUser = createAsyncThunk(
   async ({ user_id, follower_user_id, token }, { rejectWithValue }) => {
     try {
       const response = await axios.post(
-        `http://127.0.0.1:8000/api/user/follow/${user_id}/`,
+        `https://publishly-backend-8e89adfbeaf2.herokuapp.com/api/user/follow/${user_id}/`,
         {
           follower_user_id: follower_user_id,
         },

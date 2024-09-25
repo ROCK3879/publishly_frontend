@@ -6,6 +6,7 @@
     "node": "20.11.1",
     "npm": "10.2.4"
   },
+  "proxy": "https://publishly-backend-8e89adfbeaf2.herokuapp.com",
   "dependencies": {
     "@babel/core": "^7.22.5",
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",

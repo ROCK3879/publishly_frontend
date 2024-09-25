@@ -55,7 +55,7 @@ const platformFeatures = [
 const metrics = [
   {
     id: 1,
-    stat: "10K+",
+    stat: "10k+",
     emphasis: "Active users",
     rest: "are sharing their ideas and stories on Publishly daily.",
   },
@@ -73,7 +73,7 @@ const metrics = [
   },
   {
     id: 4,
-    stat: "500K+",
+    stat: "50K+",
     emphasis: "Posts shared",
     rest: "from creative ideas to inspiring stories.",
   },
@@ -372,7 +372,7 @@ export default function Home() {
             <div className="relative pb-64 pt-12 sm:pb-64 sm:pt-24 xl:col-start-1 xl:pb-24">
               <h2 className="text-base font-semibold">
                 <span className="bg-gradient-to-r from-purple-300 to-indigo-300 bg-clip-text text-transparent">
-                  Community Growth Metrics
+                  Publishly
                 </span>
               </h2>
               <p className="mt-3 text-3xl font-bold tracking-tight text-white">

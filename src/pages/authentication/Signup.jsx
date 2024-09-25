@@ -86,17 +86,28 @@ export const Signup = () => {
   };
 
   return (
-    <div className="flex flex-col items-center mt-6 min-h-screen bg-gray-100">
-      <header className="text-3xl font-bold text-blue-600 mb-6">
-        Publishly
-      </header>
+    <div
+      className="flex flex-col items-center mt-0 min-h-screen"
+      style={{
+        backgroundImage:
+          "url('https://media.istockphoto.com/id/1391415202/it/vettoriale/illustrazioni-design-concept-videoconferenza-da-mobile-lavoro-di-riunione-online-da-casa.jpg?s=1024x1024&w=is&k=20&c=VILEZLePbNVEBYK42mUhoizAwHPoAvn5NaWLNZXnGkI=')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <header className="text-3xl font-bold text-white mb-6">Publishly</header>
 
-      <div className="w-full max-w-md bg-white rounded-lg shadow-lg p-6">
+      <div
+        className="w-full max-w-md bg-white bg-opacity-80 rounded-lg shadow-lg p-6"
+        style={{
+          backgroundColor: "rgba(255, 255, 255, 0.8)", // Light transparent background to match the image
+        }}
+      >
         <div className="relative">
           <Loader show={isLoading} type="body" />
         </div>
 
-        <form className="space-y-6" onSubmit={formSignUpHandler}>
+        <form className="space-y-6 " onSubmit={formSignUpHandler}>
           <h2 className="text-2xl font-semibold text-gray-800 text-center">
             Sign Up
           </h2>

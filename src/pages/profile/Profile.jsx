@@ -97,7 +97,7 @@ export const Profile = () => {
               </Link>
               <FiLogOut
                 className="w-5 h-5 text-blue-700 cursor-pointer"
-                onClick={() => handleSignOut}
+                onClick={handleSignOut} // Correctly bound the event handler
               />
             </header>
 

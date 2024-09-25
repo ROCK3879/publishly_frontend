@@ -2,9 +2,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { signInHandler } from "../../features/auth/helpers";
-// import Loader from "react-spinner-loader";
 import { ClipLoader } from "react-spinners";
-
 import { toast } from "react-toastify";
 
 export const Signin = () => {
@@ -37,13 +35,23 @@ export const Signin = () => {
   };
 
   return (
-    <div className="flex flex-col items-center mt-6 min-h-screen bg-gray-100">
-      <header className="text-3xl font-bold text-blue-600 mb-6">
-        Publishly
-      </header>
+    <div
+      className="flex flex-col items-center mt-0 min-h-screen"
+      style={{
+        backgroundImage:
+          "url('https://media.istockphoto.com/id/1391415202/it/vettoriale/illustrazioni-design-concept-videoconferenza-da-mobile-lavoro-di-riunione-online-da-casa.jpg?s=1024x1024&w=is&k=20&c=VILEZLePbNVEBYK42mUhoizAwHPoAvn5NaWLNZXnGkI=')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <header className="text-3xl font-bold text-white mb-6">Publishly</header>
 
-      <div className="w-full max-w-md bg-white rounded-lg shadow-lg p-6 relative">
-        {/* attractive loader */}
+      <div
+        className="w-full max-w-md bg-white bg-opacity-80 rounded-lg shadow-lg p-6 relative"
+        style={{
+          backgroundColor: "rgba(255, 255, 255, 0.8)", // Light transparent background to match the image
+        }}
+      >
         {isLoading && (
           <div className="absolute inset-0 flex justify-center items-center bg-white bg-opacity-75">
             <ClipLoader color={"#3498db"} loading={isLoading} size={50} />
@@ -78,7 +86,7 @@ export const Signin = () => {
               <input
                 name="password"
                 value={password}
-                className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 pr-10" // Add padding to prevent overlap
+                className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 pr-10"
                 type={showHide ? "text" : "password"}
                 required
                 onChange={(e) =>
@@ -88,7 +96,6 @@ export const Signin = () => {
                   })
                 }
               />
-              {/* Fix icon positioning */}
               <i
                 className={`absolute right-3 top-9 text-gray-500 cursor-pointer fa-solid ${
                   showHide ? "fa-eye" : "fa-eye-slash"

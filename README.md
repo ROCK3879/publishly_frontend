@@ -397,7 +397,7 @@ Verify that the user is redirected to the correct page.
 Verify that the content of the page matches the link description.
 Expected Result: Navigation links work correctly and redirect to the appropriate pages.
 
-# Deployment Instructions for Restaurant No1
+# Deployment Instructions for Publishly web site
 
 ## Via Visual Studio
 

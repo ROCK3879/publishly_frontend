@@ -8,7 +8,7 @@ The platform is designed for individuals who are passionate about writing on div
 
 ## List of links
 
-- [GitHub Repo Frontend](https://github.com/ROCK3879/publishly_frontend.git)
+- [GitHub Repo Frontend]([https://github.com/ROCK3879/publishly_frontend.git])
 - [GitHub Repo Backend](https://github.com/ROCK3879/publishly_backend.git)
 - [Live Link](https://publishly-46a2edd7f6b7.herokuapp.com/)
 - [BACKLOG link](https://github.com/users/ROCK3879/projects/4/views/1)-----------------------------------

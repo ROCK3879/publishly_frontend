@@ -246,11 +246,11 @@ Visual Studio is a robust development environment I employed for writing, review
 
 ## GitHub
 
-GitHub is a platform for version control and collaborative software development. I utilized it to create a central code repository and manage the deployment of Restaurant No1. This tool allows me to track changes made to the code and revert to previous versions when necessary.
+GitHub is a platform for version control and collaborative software development. I utilized it to create a central code repository and manage the deployment of Publishly platform. This tool allows me to track changes made to the code and revert to previous versions when necessary.
 
 ## Heroku
 
-Heroku is a cloud-based platform that enables developers to build, deploy, and scale modern applications seamlessly. Supporting multiple programming languages including Node.js, Ruby, Java, PHP, Python, Go, Scala, and Clojure, Heroku allows developers to focus on code rather than infrastructure. I deployed Restaurant No1 on Heroku, taking advantage of its seamless integration with GitHub.
+Heroku is a cloud-based platform that enables developers to build, deploy, and scale modern applications seamlessly. Supporting multiple programming languages including Node.js, Ruby, Java, PHP, Python, Go, Scala, and Clojure, Heroku allows developers to focus on code rather than infrastructure. I deployed Publishly platform on Heroku, taking advantage of its seamless integration with GitHub.
 
 ## Django & Python
 

@@ -199,7 +199,7 @@ The left side contains the Dashboard and Quick Menu, providing easy access to es
 
 At the top of the right side, there is a visual dashboard displaying key metrics, including the total number of users, posts, and categories. Below this, administrators can review new user registrations and the latest posts, ensuring they stay informed about recent activity on the platform.
 
-![Admin Interface Design](src/images/admin_interface _design.jpg)
+![Admin Interface Design](src/images/admin_interface_design.jpg)
 
 ## User Logout button
 

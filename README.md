@@ -92,7 +92,7 @@ Profile Updates: Manage profile details.
 
 The fully responsive navigation bar is available on all pages, ensuring seamless navigation across the platform. It includes key elements such as registration, sign-in, sign-out, and forms, which remain consistent on each page for a unified user experience. This feature enables users to easily move from one section to another, providing an intuitive and efficient way to explore the platform.
 
-![Navigation bar](src/images/navigation_bar.jpg)
+- ![Navigation bar](src/images/navigation_bar.jpg)
 
 ## Home Page
 
@@ -100,7 +100,7 @@ The Home Page serves as the central hub of the Publishly platform, offering user
 
 Clear navigation options and a responsive design ensure that users can easily browse and interact with the platform from any device.
 
-![Home page](src/images/home_page.jpg)
+- ![Home page](src/images/home_page.jpg)
 
 ## Explore page
 
@@ -108,7 +108,7 @@ The Explore page is designed to help users discover new and trending content on 
 
 With powerful search and filtering options, the Explore Page makes it easy to find fresh ideas and connect with new authors and topics, creating an engaging and dynamic user experience.
 
-![Explore page](src/images/explore_page.jpg)
+ - ![Explore page](src/images/explore_page.jpg)
 
 ## Profile Page
 
@@ -116,7 +116,7 @@ The Profile Page allows users to manage and showcase their personal information,
 
 From the profile page, users can edit their personal details, update account settings, and manage privacy preferences. It serves as a personal hub where users can track their activity and easily navigate their contributions to the community.
 
-![Profile page](src/images/profile_page.jpg)
+- ![Profile page](src/images/profile_page.jpg)
 
 ## Admin Home Page
 
@@ -126,57 +126,57 @@ Admins can easily navigate to quick menu sections users, posts and categories. A
 
 With a friendly interface and streamlined navigation, the Admin Home Page empowers administrators to efficiently oversee the Publishly community and ensure a safe, engaging environment for all users.
 
-![Admin Home Page](src/images/admin_home_page.jpg)
+- ![Admin Home Page](src/images/admin_home_page.jpg)
 
 At the end, the admin has the option to log out using the Logout button, which is hidden under the gear icon in the upper right corner of the page.
 
-![Logout Button](src/images/admin_logout_button.jpg)
+- ![Logout Button](src/images/admin_logout_button.jpg)
 
 ### Admin Quick Menu
 
 The Admin Quick Menu for Users provides administrators with immediate access to essential user management functions. This streamlined menu is designed for efficient navigation and includes the following key options:
 
-![Admin Quick Menu](src/images/admin_quick_menu.jpg)
+- ![Admin Quick Menu](src/images/admin_quick_menu.jpg)
 
 #### View Quick User Page: 
 
 Quickly access a comprehensive list of registered users, edit users info and delete users
 
-![View Users Page](src/images/quick_menu_users_page.jpg)
+- ![View Users Page](src/images/quick_menu_users_page.jpg)
 
 #### View Posts:
 
 The View Posts feature allows administrators to access a comprehensive list of all published content on the platform. This section includes options to: Monitor Posts, Delete Posts and Filter and Search.
 
-![View Posts Page](src/images/quick_menu_post_page.jpg)
+- ![View Posts Page](src/images/quick_menu_post_page.jpg)
 
 #### View Categories:
 
 The View Categories feature enables administrators to manage the topics under which content is organized on the platform. This section includes functionalities to: Access Category List, Create New Categories, Edit Categories, Update Categories and Delete Categories.
 
-![View Category Page](src/images/quick_menu_categories_page.jpg)
+- ![View Category Page](src/images/quick_menu_categories_page.jpg)
 
 ## Join Now and Sign Up
 
 At the center of the home page, there are "Join Now" button and upper right corner there are "Sign Up" button that users can click to access a comprehensive registration form. This form allows users to register by entering their first name, last name, username, email address, and password. A user must confirm their password. The register form examines the right formula of an email. If its formula was not correct, an error message will appear. As a user enters their password, and user confirms their password, the two must be identical. Passwords must meet specific requirements to ensure security. If a user does not fulfill these criteria, an error message will appear, indicating the following requirements: at least one uppercase letter, one lowercase letter, one special character, and one number. At the bottom of this form, there is a Log In link in case the user wants to access the Log In form.
 
-![Home Page Join Now and Sign Up](src/images/home_page_joinnow_signup.jpg)
+- ![Home Page Join Now and Sign Up](src/images/home_page_joinnow_signup.jpg)
 
-![Join Now and Sign Up user email error](src/images/home_page_joinnow_signup_email_error.jpg)
+- ![Join Now and Sign Up user email error](src/images/home_page_joinnow_signup_email_error.jpg)
 
-![Join Now and Sign Up User Password not match error](src/images/home_page_joinnow_signup_password_notmatch_error.jpg)
+- ![Join Now and Sign Up User Password not match error](src/images/home_page_joinnow_signup_password_notmatch_error.jpg)
 
-![Join Now and Sign Up User Password requirement error](src/images/home_page_joinnow_signup_password_requirement_error.jpg)
+- ![Join Now and Sign Up User Password requirement error](src/images/home_page_joinnow_signup_password_requirement_error.jpg)
 
 ## Log In and Sign In
 
 At the center of the home page, there are "Log In" button and upper right corner there are "Sign In" button that users can click to access a comprehensive sign in form. This form allows users to sign in by entering their email address, and password. The sign in form examines the right formula of an email. If its formula was not correct, an error message will appear. As a user enters their password. The password must also be valid; otherwise, the user will receive an error message indicating that their password does not match the account information.
 
-![Home Page Log In and Sign In](src/images/home_page_login_signin.jpg)
+- ![Home Page Log In and Sign In](src/images/home_page_login_signin.jpg)
 
-![Sign In User email not valid error](src/images/home_page_login_signin_email_error.jpg)
+- ![Sign In User email not valid error](src/images/home_page_login_signin_email_error.jpg)
 
-![Sign In User Password not match error](src/images/home_page_login_signin_password_error.jpg)
+- ![Sign In User Password not match error](src/images/home_page_login_signin_password_error.jpg)
 
 ## User Interface Design
 
@@ -188,7 +188,7 @@ Below the search bar on the right side, there is a Category menu where users can
 
 In the center of the page, the upper section includes a window where users can upload an image, select a category, and write text. By clicking the "Post" button, users can publish their desired content.
 
-![User Interface Design](src/images/user_interface_design.jpg)
+- ![User Interface Design](src/images/user_interface_design.jpg)
 
 ## Admin Interface Design
 
@@ -199,36 +199,36 @@ The left side contains the Dashboard and Quick Menu, providing easy access to es
 
 At the top of the right side, there is a visual dashboard displaying key metrics, including the total number of users, posts, and categories. Below this, administrators can review new user registrations and the latest posts, ensuring they stay informed about recent activity on the platform.
 
-![Admin Interface Design](src/images/admin_interface _design.jpg)
+- ![Admin Interface Design](src/images/admin_interface _design.jpg)
 
 ## User Logout button
 
 The Logout button appears on the nav bar under profil button and only after a user will have login.
 When a user clicks on the "Logout" button, user will successfully logout and redirect to home page.
 
-![User Logout button](src/images/user_logout_button.jpg)
+- ![User Logout button](src/images/user_logout_button.jpg)
 
 ## Admin Logout button
 
 The Logout button appears on the upper right corner under gear button and only after a admin will have login.
 When a admin clicks on the gear sign "Logout" button will appear and after click logout button admin will successfully logout and redirect to home page.
 
-![Admin Logout button](src/images/admin_logout_button.jpg)
+- ![Admin Logout button](src/images/admin_logout_button.jpg)
 
 # Technologies Used
 
-Frontend: HTML, CSS, JavaScript
-Backend: Django, Django REST framework
-Database: PostgreSQL
+- Frontend: HTML, CSS, JavaScript
+- Backend: Django, Django REST framework
+- Database: PostgreSQL
 
 # Typography and color scheme
 
-Theme_color: #000000
-Background color: #ffffff
-Google font have been used: Roboto.
-Colors have been applied: #0e0e0e, #ffffff, #000000.
-Webkit-box-shadow: #00000023;
-Box-shadow: #00000033;
+- Theme_color: #000000
+- Background color: #ffffff
+- Google font have been used: Roboto.
+- Colors have been applied: #0e0e0e, #ffffff, #000000.
+- Webkit-box-shadow: #00000023;
+- Box-shadow: #00000033;
 
 # Wireframes
 
@@ -236,7 +236,7 @@ I used Balsamiq wireframes for my project.
 
 # Entity relationship diagram
 
-![Diagram](src/images/diagram.jpg)
+- ![Diagram](src/images/diagram.jpg)
 
 # Technology Overview
 
@@ -311,33 +311,33 @@ Gunicorn is a WSGI server that acts as an intermediary between web servers and P
 I validated it by means of the W3C HTML validator.
 Below is a screenshot that documents this validation.
 
-![W3C HTML Page validator](src/images/w3c_html_validator.png)
+- ![W3C HTML Page validator](src/images/w3c_html_validator.png)
 
 ## CSS
 
 I validated it by means of the W3C CSS validator.
 Below is a screenshot that documents this validation.
 
-![W3C CSS Page validator](src/images/w3c_css_validator.png)
+- ![W3C CSS Page validator](src/images/w3c_css_validator.png)
 
 ## CI Python Linter
 
 I validated it by means of CI Python Linter.
 Below is a screenshot that documents this validation.
 
-![CI Python Linter admin.py ](src/images/ci_python_linter_admin_py_validation.png)
+- ![CI Python Linter admin.py ](src/images/ci_python_linter_admin_py_validation.png)
 
-![CI Python Linter apps.py](src/images/ci_python_linter_apps_py_validation.png)
+- ![CI Python Linter apps.py](src/images/ci_python_linter_apps_py_validation.png)
 
-![CI Python Linter tests.py](src/images/ci_python_linter_test_py_validation.png)
+- ![CI Python Linter tests.py](src/images/ci_python_linter_test_py_validation.png)
 
-![CI Python Linter views.py](src/images/ci_python_linter_views_py_validation.png)
+- ![CI Python Linter views.py](src/images/ci_python_linter_views_py_validation.png)
 
-![CI Python Linter manage.py](src/images/ci_python_linter_manage_py_validation.png)
+- ![CI Python Linter manage.py](src/images/ci_python_linter_manage_py_validation.png)
 
-![CI Python Linter setings.py](src/images/ci_python_linter_setings_py_validation.png)
+- ![CI Python Linter setings.py](src/images/ci_python_linter_setings_py_validation.png)
 
-![CI Python Linter urls.py](src/images/ci_python_linter_urls_py_validation.jpg)
+- ![CI Python Linter urls.py](src/images/ci_python_linter_urls_py_validation.jpg)
 
 
 # Test Cases

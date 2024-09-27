@@ -126,9 +126,9 @@ Admins can easily navigate to quick menu sections users, posts and categories. A
 
 With a friendly interface and streamlined navigation, the Admin Home Page empowers administrators to efficiently oversee the Publishly community and ensure a safe, engaging environment for all users.
 
-At the end, the admin has the option to log out using the Logout button, which is hidden under the gear icon in the upper right corner of the page.
-
 ![Admin Home Page](src/images/admin_home_page.jpg)
+
+At the end, the admin has the option to log out using the Logout button, which is hidden under the gear icon in the upper right corner of the page.
 
 ![Logout Button](src/images/admin_logout_button.jpg)
 

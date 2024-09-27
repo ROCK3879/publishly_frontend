@@ -4,7 +4,7 @@ Publishly is an innovative platform that enables users to register and create pe
 
 The platform is designed for individuals who are passionate about writing on diverse topics, fostering an environment of respectful dialogue and meaningful opinion exchange.
 
-![Screenshot demonstrating website responsiveness](/assets/readme_image/website_responsiveness.jpg)
+- ![Screenshot demonstrating website responsiveness](/assets/readme_image/website_responsiveness.jpg)
 
 ## List of links
 
@@ -92,7 +92,7 @@ Profile Updates: Manage profile details.
 
 The fully responsive navigation bar is available on all pages, ensuring seamless navigation across the platform. It includes key elements such as registration, sign-in, sign-out, and forms, which remain consistent on each page for a unified user experience. This feature enables users to easily move from one section to another, providing an intuitive and efficient way to explore the platform.
 
-![Navigation bar](/assets/readme_image/navigation_bar.jpg)
+- ![Navigation bar](/assets/readme_image/navigation_bar.jpg)
 
 ## Home Page
 
@@ -100,7 +100,7 @@ The Home Page serves as the central hub of the Publishly platform, offering user
 
 Clear navigation options and a responsive design ensure that users can easily browse and interact with the platform from any device.
 
-![Home page](/assets/readme_image/home_page.jpg)
+- ![Home page](/assets/readme_image/home_page.jpg)
 
 ## Explore page
 
@@ -108,7 +108,7 @@ The Explore page is designed to help users discover new and trending content on 
 
 With powerful search and filtering options, the Explore Page makes it easy to find fresh ideas and connect with new authors and topics, creating an engaging and dynamic user experience.
 
-![Explore page](/assets/readme_image/gallery_page_1.jpg)
+- ![Explore page](/assets/readme_image/gallery_page_1.jpg)
 
 ## Profile Page
 
@@ -116,7 +116,7 @@ The Profile Page allows users to manage and showcase their personal information,
 
 From the profile page, users can edit their personal details, update account settings, and manage privacy preferences. It serves as a personal hub where users can track their activity and easily navigate their contributions to the community.
 
-![Profile page](/assets/readme_image/menu_page.jpg)
+- ![Profile page](/assets/readme_image/menu_page.jpg)
 
 ## Admin Home Page
 
@@ -128,55 +128,55 @@ With a friendly interface and streamlined navigation, the Admin Home Page empowe
 
 At the end, the admin has the option to log out using the Logout button, which is hidden under the gear icon in the upper right corner of the page.
 
-![Admin Home Page](/assets/readme_image/contact_page_empty.jpg)
+- ![Admin Home Page](/assets/readme_image/contact_page_empty.jpg)
 
-![Logout Button](/assets/readme_image/contact_page_empty.jpg)
+- ![Logout Button](/assets/readme_image/contact_page_empty.jpg)
 
 ### Admin Quick Menu
 
 The Admin Quick Menu for Users provides administrators with immediate access to essential user management functions. This streamlined menu is designed for efficient navigation and includes the following key options:
 
-![Admin Quick Menu](/assets/readme_image/contact_page_empty.jpg)
+- ![Admin Quick Menu](/assets/readme_image/contact_page_empty.jpg)
 
 #### View Users Page: 
 
 Quickly access a comprehensive list of registered users, edit users info and delete users
 
-![View Users Page](/assets/readme_image/contact_page_empty.jpg)
+- ![View Users Page](/assets/readme_image/contact_page_empty.jpg)
 
 #### View Posts:
 
 The View Posts feature allows administrators to access a comprehensive list of all published content on the platform. This section includes options to: Monitor Posts, Delete Posts and Filter and Search.
 
-![View Posts Page](/assets/readme_image/contact_page_empty.jpg)
+- ![View Posts Page](/assets/readme_image/contact_page_empty.jpg)
 
 #### View Categories:
 
 The View Categories feature enables administrators to manage the topics under which content is organized on the platform. This section includes functionalities to: Access Category List, Create New Categories, Edit Categories, Update Categories and Delete Categories.
 
-![View Category Page](/assets/readme_image/contact_page_empty.jpg)
+- ![View Category Page](/assets/readme_image/contact_page_empty.jpg)
 
 ## Join Now and Sign Up
 
 At the center of the home page, there are "Join Now" button and upper right corner there are "Sign Up" button that users can click to access a comprehensive registration form. This form allows users to register by entering their first name, last name, username, email address, and password. A user must confirm their password. The register form examines the right formula of an email. If its formula was not correct, an error message will appear. As a user enters their password, and user confirms their password, the two must be identical. Passwords must meet specific requirements to ensure security. If a user does not fulfill these criteria, an error message will appear, indicating the following requirements: at least one uppercase letter, one lowercase letter, one special character, and one number. At the bottom of this form, there is a Log In link in case the user wants to access the Log In form.
 
-![Home Page Join Now and Sign Up](/assets/readme_image/register_customer_error_password_not_match.jpg)
+- ![Home Page Join Now and Sign Up](/assets/readme_image/register_customer_error_password_not_match.jpg)
 
-![Join Now and Sign Up user email error](/assets/readme_image/register_customer_error_password_not_match.jpg)
+- ![Join Now and Sign Up user email error](/assets/readme_image/register_customer_error_password_not_match.jpg)
 
-![Join Now and Sign Up User Password not match error](/assets/readme_image/register_customer_error_password_not_match.jpg)
+- ![Join Now and Sign Up User Password not match error](/assets/readme_image/register_customer_error_password_not_match.jpg)
 
-![Join Now and Sign Up User Password requirement error](/assets/readme_image/register_customer_error_password_not_match.jpg)
+- ![Join Now and Sign Up User Password requirement error](/assets/readme_image/register_customer_error_password_not_match.jpg)
 
 ## Log In and Sign In
 
 At the center of the home page, there are "Log In" button and upper right corner there are "Sign In" button that users can click to access a comprehensive sign in form. This form allows users to sign in by entering their email address, and password. The sign in form examines the right formula of an email. If its formula was not correct, an error message will appear. As a user enters their password. The password must also be valid; otherwise, the user will receive an error message indicating that their password does not match the account information.
 
-![Home Page Log In and Sign In](/assets/readme_image/login_customer_username_or_password_not_valid.jpg)
+- ![Home Page Log In and Sign In](/assets/readme_image/login_customer_username_or_password_not_valid.jpg)
 
-![Sign In User email not valid error](/assets/readme_image/login_customer_username_or_password_not_valid.jpg)
+- ![Sign In User email not valid error](/assets/readme_image/login_customer_username_or_password_not_valid.jpg)
 
-![Sign In User Password not match error](/assets/readme_image/login_customer_username_or_password_not_valid.jpg)
+- ![Sign In User Password not match error](/assets/readme_image/login_customer_username_or_password_not_valid.jpg)
 
 ## User Interface Design
 
@@ -188,7 +188,7 @@ Below the search bar on the right side, there is a Category menu where users can
 
 In the center of the page, the upper section includes a window where users can upload an image, select a category, and write text. By clicking the "Post" button, users can publish their desired content.
 
-![User Interface Design](/assets/readme_image/new_booking_customer.jpg)
+- ![User Interface Design](/assets/readme_image/new_booking_customer.jpg)
 
 ## Admin Interface Design
 
@@ -199,21 +199,21 @@ The left side contains the Dashboard and Quick Menu, providing easy access to es
 
 At the top of the right side, there is a visual dashboard displaying key metrics, including the total number of users, posts, and categories. Below this, administrators can review new user registrations and the latest posts, ensuring they stay informed about recent activity on the platform.
 
-![Admin Interface Design](/assets/readme_image/my_bookings_customer.jpg)
+- ![Admin Interface Design](/assets/readme_image/my_bookings_customer.jpg)
 
 ## User Logout button
 
 The Logout button appears on the nav bar under profil button and only after a user will have login.
 When a user clicks on the "Logout" button, user will successfully logout and redirect to home page.
 
-![User Logout button](/assets/readme_image/my_bookings_customer_logout.jpg)
+- ![User Logout button](/assets/readme_image/my_bookings_customer_logout.jpg)
 
 ## Admin Logout button
 
 The Logout button appears on the upper right corner under gear button and only after a admin will have login.
 When a admin clicks on the gear sign "Logout" button will appear and after click logout button admin will successfully logout and redirect to home page.
 
-![Admin Logout button](/assets/readme_image/my_bookings_customer_logout.jpg)
+- ![Admin Logout button](/assets/readme_image/my_bookings_customer_logout.jpg)
 
 # Technologies Used
 
@@ -236,7 +236,7 @@ I used Balsamiq wireframes for my project.
 
 # Entity relationship diagram
 
-![Diagram](/assets/readme_image/diagram.jpg)
+- ![Diagram](/assets/readme_image/diagram.jpg)
 
 # Technology Overview
 
@@ -246,7 +246,7 @@ Visual Studio is a robust development environment I employed for writing, review
 
 ## GitHub
 
-GitHub is a platform for version control and collaborative software development. I utilized it to create a central code repository and manage the deployment of Restaurant No1. This tool allows me to track changes made to the code and revert to previous versions when necessary.
+GitHub is a platform for version control and collaborative software development. I utilized it to create a central code repository and manage the deployment of Publishly platform. This tool allows me to track changes made to the code and revert to previous versions when necessary.
 
 ## Heroku
 
@@ -311,33 +311,33 @@ Gunicorn is a WSGI server that acts as an intermediary between web servers and P
 I validated it by means of the W3C HTML validator.
 Below is a screenshot that documents this validation.
 
-![W3C HTML Page validator](/assets/readme_image/home_html_validator1.jpg)
+- ![W3C HTML Page validator](/assets/readme_image/home_html_validator1.jpg)
 
 ## CSS
 
 I validated it by means of the W3C CSS validator.
 Below is a screenshot that documents this validation.
 
-![W3C CSS Page validator](/assets/readme_image/homepage_css_validator.jpg)
+- ![W3C CSS Page validator](/assets/readme_image/homepage_css_validator.jpg)
 
 ## CI Python Linter
 
 I validated it by means of CI Python Linter.
 Below is a screenshot that documents this validation.
 
-![CI Python Linter admin.py ](/assets/readme_image/admin.py.jpg)
+- ![CI Python Linter admin.py ](/assets/readme_image/admin.py.jpg)
 
-![CI Python Linter apps.py](/assets/readme_image/apps.py.jpg)
+- ![CI Python Linter apps.py](/assets/readme_image/apps.py.jpg)
 
-![CI Python Linter tests.py](/assets/readme_image/tests.py.jpg)
+- ![CI Python Linter tests.py](/assets/readme_image/tests.py.jpg)
 
-![CI Python Linter views.py](/assets/readme_image/views.py.jpg)
+- ![CI Python Linter views.py](/assets/readme_image/views.py.jpg)
 
-![CI Python Linter manage.py](/assets/readme_image/manage.py.jpg)
+- ![CI Python Linter manage.py](/assets/readme_image/manage.py.jpg)
 
-![CI Python Linter setings.py](/assets/readme_image/models.py.jpg)
+- ![CI Python Linter setings.py](/assets/readme_image/models.py.jpg)
 
-![CI Python Linter urls.py](/assets/readme_image/models.py.jpg)
+- ![CI Python Linter urls.py](/assets/readme_image/models.py.jpg)
 
 
 # Test Cases

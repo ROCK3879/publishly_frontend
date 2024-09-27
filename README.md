@@ -4,7 +4,7 @@ Publishly is an innovative platform that enables users to register and create pe
 
 The platform is designed for individuals who are passionate about writing on diverse topics, fostering an environment of respectful dialogue and meaningful opinion exchange.
 
-- ![Screenshot demonstrating website responsiveness](../images/responsivnes_img.jpg)
+- ![Screenshot demonstrating website responsiveness](src/images/responsivnes_img.jpg)
 
 ## List of links
 

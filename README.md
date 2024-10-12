@@ -248,6 +248,17 @@ React’s component-based architecture allows for building reusable, modular com
 ## Developer Productivity
 React enhances developer productivity by simplifying state management and UI updates through hooks like useState and useEffect. Its declarative syntax allows developers to focus on what the UI should look like, while React efficiently handles the rendering, which reduces development time and complexity.
 
+# Reusable React Components
+The application is built with a focus on creating reusable React components, which ensures scalability, maintainability, and a cleaner codebase.
+
+## Benefits of Reusability
+### Code Maintenance 
+Having reusable components reduces code duplication, making the codebase easier to maintain and update.
+### Scalability 
+Components can be easily reused or extended as the application grows, making development more efficient.
+### React Architecture 
+This approach aligns with React’s architecture by breaking the UI into small, self-contained components that manage their own state and behavior.
+
 # Wireframes
 
 I used Balsamiq wireframes for my project.

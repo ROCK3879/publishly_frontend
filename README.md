@@ -19,6 +19,22 @@ Publishly is a dynamic platform that allows users to register and build personal
 
 Designed for those with a passion for writing on diverse topics, Publishly cultivates a respectful space for exchanging ideas and fostering meaningful conversations.
 
+# Project Goals
+
+The main goals of this project are to:
+## Create a Responsive and Interactive User Interface: 
+Develop a clean and intuitive UI that works seamlessly across various devices and screen sizes, providing a smooth user experience.
+## Implement Core Functionality with CRUD Operations: 
+Allow users to create, read, update, and delete posts and comments through an interactive front-end that communicates with the back-end API.
+## Utilize Reusable React Components: 
+Build the application using React’s component-based architecture, ensuring reusability, maintainability, and scalability for future features or updates.
+## Enhance User Experience with Dynamic Content Updates: 
+Improve the interactivity of the application by implementing real-time updates (e.g., after deleting a post or comment) without requiring a page refresh.
+## Ensure Application Security and Performance: 
+Protect sensitive information by following best practices (e.g., using environment variables) and optimize the application's performance through React’s virtual DOM and efficient state management.
+## Document Key Features and Design: 
+Provide comprehensive documentation that outlines the project’s functionality, design choices, and the benefits of using React.
+
 # Admin stories
 
 ## As an Admin, I want to manage user accounts, 

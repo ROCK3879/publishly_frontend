@@ -231,11 +231,22 @@ When a admin clicks on the gear sign "Logout" button will appear and after click
 - Box-shadow: #00000033;
 
 # Design Documentation
-## UI/UX Design Principles
 
+## UI/UX Design Principles
 - Consistency: Reusable components ensure a uniform look and feel.
 - Responsiveness: The app adapts to various screen sizes for mobile, tablet, and desktop.
 - Immediate Feedback: React's state management provides instant updates without page reloads.
+
+# Benefits of React
+
+## Performance
+React’s virtual DOM and efficient diffing algorithm significantly improve performance by minimizing unnecessary re-renders. Instead of reloading the entire page, React updates only the parts of the UI that have changed, providing a faster and smoother user experience.
+
+## Component-based Architecture
+React’s component-based architecture allows for building reusable, modular components. This promotes code reusability and scalability, as individual components can be easily maintained, tested, and used across different parts of the application without duplicating code.
+
+## Developer Productivity
+React enhances developer productivity by simplifying state management and UI updates through hooks like useState and useEffect. Its declarative syntax allows developers to focus on what the UI should look like, while React efficiently handles the rendering, which reduces development time and complexity.
 
 # Wireframes
 

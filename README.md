@@ -253,6 +253,12 @@ When a admin clicks on the gear sign "Logout" button will appear and after click
 - Responsiveness: The app adapts to various screen sizes for mobile, tablet, and desktop.
 - Immediate Feedback: React's state management provides instant updates without page reloads.
 
+## Design Mockups
+Include links or images of design mockups or wireframes that represent the application's layout and functionality. This visual representation helps convey the design intent and user flow.
+
+## Responsive Design
+The application is built to be responsive, employing CSS Flexbox and Grid layouts to adapt to various screen sizes, ensuring a seamless experience on mobile, tablet, and desktop devices.
+
 # Benefits of React
 
 ## Performance

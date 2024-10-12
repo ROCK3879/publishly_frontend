@@ -230,6 +230,13 @@ When a admin clicks on the gear sign "Logout" button will appear and after click
 - Webkit-box-shadow: #00000023;
 - Box-shadow: #00000033;
 
+# Design Documentation
+## UI/UX Design Principles
+
+- Consistency: Reusable components ensure a uniform look and feel.
+- Responsiveness: The app adapts to various screen sizes for mobile, tablet, and desktop.
+- Immediate Feedback: React's state management provides instant updates without page reloads.
+
 # Wireframes
 
 I used Balsamiq wireframes for my project.

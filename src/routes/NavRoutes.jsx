@@ -4,6 +4,7 @@ import { CategoryPage } from "../pages/categoryPage/CategoryPage";
 
 import HomePage from "../pages/home";
 import AdminHome from "../pages/admin/Home";
+import NotFound from "../pages/notfound/Notfound";
 
 import { useSelector } from "react-redux";
 import Mockman from "mockman-js";
@@ -72,7 +73,7 @@ export const NavRoutes = () => {
       )}
 
       {/* Handle unknown routes */}
-      <Route path="*" element={<h2> OOPS! Page Not Found</h2>} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 };

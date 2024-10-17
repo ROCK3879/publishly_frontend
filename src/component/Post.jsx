@@ -6,13 +6,14 @@ import { MdOutlineBookmarkBorder, MdOutlineBookmark } from "react-icons/md";
 import { useDispatch, useSelector } from "react-redux";
 import { getFormattedDate } from "../utilities/getFormattedDate";
 import { openPostModal, setEditPostObj } from "../features/post/postSlice";
-import { followUser, unFollowUser } from "../features/user/helpers";
+import { followUser, getUsers, unFollowUser } from "../features/user/helpers";
 import {
   likePost,
   dislikePost,
   deletePost,
   getAllPosts,
 } from "../features/post/helpers";
+import Swal from "sweetalert2"; // Import SweetAlert
 
 import { useLocation, useNavigate } from "react-router-dom";
 
@@ -37,37 +38,96 @@ export const Post = ({ post }) => {
   const userProfile = profiles.find(
     (profile) => profile.user === currentUser?.user_id
   );
-
+  console.log("User Id", userData);
+  console.log("Current User", currentUser);
   // Edit Post Handler
-  const editHandler = (e) => {
+  const editHandler = async (e) => {
     e.stopPropagation();
-    dispatch(openPostModal());
-    dispatch(setEditPostObj(post));
-    setPostOptions(false);
+
+    try {
+      // Dispatch openPostModal (synchronous action)
+      dispatch(openPostModal());
+
+      // Set the post object to edit (synchronous action)
+      dispatch(setEditPostObj(post));
+
+      // Immediately fetch all posts after setting the post object to edit
+      await dispatch(getAllPosts());
+
+      // Optionally, close the post options UI
+      setPostOptions(false);
+    } catch (error) {
+      console.error("Error fetching posts after editing:", error);
+    }
   };
+
+  // Delete Post Handler
 
   // Delete Post Handler
   const deletePostHandler = (e) => {
     e.stopPropagation();
-    dispatch(deletePost({ postId: post?.post_id, token }));
-    dispatch(getAllPosts());
-    setPostOptions(false);
+
+    // Show confirmation dialog before deleting the post
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to undo this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!",
+      cancelButtonText: "Cancel",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        // Proceed with deleting the post if confirmed
+        dispatch(deletePost({ postId: post?.post_id, token }))
+          .then(() => {
+            dispatch(getAllPosts());
+            setPostOptions(false);
+
+            // Show success message
+            Swal.fire({
+              title: "Deleted!",
+              text: "The post has been deleted.",
+              icon: "success",
+              confirmButtonColor: "#3085d6",
+            });
+          })
+          .catch((error) => {
+            console.error("Error deleting post:", error);
+
+            // Show error message if deletion fails
+            Swal.fire({
+              title: "Error!",
+              text: "There was an error deleting the post.",
+              icon: "error",
+              confirmButtonColor: "#3085d6",
+            });
+          });
+      }
+    });
   };
 
   // Follow/Unfollow Handlers
   const toggleFollow = (e) => {
     e.stopPropagation();
-    const action = currentUser?.user_following?.includes(userData.id)
+
+    const action = currentUser.followers.some(
+      (followedUser) => followedUser.user_id === userData.id
+    )
       ? unFollowUser
       : followUser;
+
     dispatch(
       action({
-        user_id: currentUser?.user_id,
-        follower_user_id: userData.id,
+        user_id: currentUser.user_id, // The user being followed
+        follower_user_id: userData.id, // The logged-in user (follower)
         token,
       })
-    );
-    setPostOptions(false);
+    ).then(() => {
+      // Fetch updated user data after following is complete
+      dispatch(getUsers());
+    });
   };
 
   // Like Post Handler
@@ -75,15 +135,20 @@ export const Post = ({ post }) => {
     e.stopPropagation();
     setIsLiked(true);
     setLikeCount((prevCount) => prevCount + 1);
+    console.log("Post Id", post?.post_id);
+    console.log("User Id", userData.id);
 
-    dispatch(
-      likePost({ postId: post?.post_id, user_id: userData.id, token })
-    ).catch((error) => {
-      // Rollback in case of error
-      setIsLiked(false);
-      setLikeCount((prevCount) => prevCount - 1);
-      console.error("Error liking post:", error);
-    });
+    dispatch(likePost({ postId: post?.post_id, user_id: userData.id, token }))
+      .then(() => {
+        // Dispatch to fetch all posts again after liking the post
+        dispatch(getAllPosts());
+      })
+      .catch((error) => {
+        // Rollback in case of error
+        setIsLiked(false);
+        setLikeCount((prevCount) => prevCount - 1);
+        console.error("Error liking post:", error);
+      });
   };
 
   // Dislike Post Handler
@@ -94,12 +159,17 @@ export const Post = ({ post }) => {
 
     dispatch(
       dislikePost({ postId: post?.post_id, user_id: userData.id, token })
-    ).catch((error) => {
-      // Rollback in case of error
-      setIsLiked(true);
-      setLikeCount((prevCount) => prevCount + 1);
-      console.error("Error disliking post:", error);
-    });
+    )
+      .then(() => {
+        // Dispatch to fetch all posts again after disliking the post
+        dispatch(getAllPosts());
+      })
+      .catch((error) => {
+        // Rollback in case of error
+        setIsLiked(true);
+        setLikeCount((prevCount) => prevCount + 1);
+        console.error("Error disliking post:", error);
+      });
   };
 
   return (
@@ -153,7 +223,9 @@ export const Post = ({ post }) => {
                     className="my-1 p-1 hover:bg-slate-200 rounded"
                     onClick={toggleFollow}
                   >
-                    {currentUser?.user_following?.includes(userData.id)
+                    {currentUser.followers.some(
+                      (followedUser) => followedUser.user_id === userData.id
+                    )
                       ? "Unfollow"
                       : "Follow"}
                   </li>

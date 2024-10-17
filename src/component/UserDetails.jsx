@@ -41,8 +41,10 @@ export const UserDetails = ({ currentUser }) => {
         follower_user_id: userData.id, // The logged-in user (follower)
         token,
       })
-    );
-    dispatch(getUsers());
+    ).then(() => {
+      // Fetch updated user data after following is complete
+      dispatch(getUsers());
+    });
   };
 
   const handleUnfollow = () => {
@@ -52,8 +54,10 @@ export const UserDetails = ({ currentUser }) => {
         follower_user_id: userData.id, // The logged-in user (follower)
         token,
       })
-    );
-    dispatch(getUsers());
+    ).then(() => {
+      // Fetch updated user data after following is complete
+      dispatch(getUsers());
+    });
   };
 
   return (

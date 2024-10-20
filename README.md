@@ -76,7 +76,7 @@ Quickly access a comprehensive list of registered users, edit users info and del
 
 The View Posts feature allows administrators to access a comprehensive list of all published content on the platform. This section includes options to: Monitor Posts, Delete Posts and Filter and Search.
 
-![View Posts Page](src/images/quick_menu_post_page.jpg)
+![View Posts Page](src/images/0.0.quick_menu_post_page.jpg)
 
 #### View Categories:
 
@@ -102,23 +102,29 @@ When a admin clicks on the gear sign "Logout" button will appear and after click
 
 ![Admin Logout button](src/images/admin_logout_button.jpg)
 
-#### New User Password Requirements Message
+#### Password Requirements Message
 
-This message informs users of the required criteria for creating a secure password. Typical requirements include a minimum length, the use of both uppercase and lowercase letters, numbers, and special characters.
+This message informs Admin of the required criteria for creating a secure password. Typical requirements include a minimum length, the use of both uppercase and lowercase letters, numbers, and special characters.
 
 ![Password Requirements](src/images/1.0.new_user_password_requirements_msg.jpg)
 
-#### New User Password Recommendation Message
+#### Password Recommendation Message
 
-This message provides users with password recommendations aimed at improving security. The recommendations may suggest creating a password that is hard to guess by using a combination of letters, numbers, and symbols.
+This message provides Admin with password recommendations aimed at improving security. The recommendations may suggest creating a password that is hard to guess by using a combination of letters, numbers, and symbols.
 
 ![Password Recommendation](src/images/1.1.new_user_password_recommendation_msg.jpg)
 
-#### New User Password Mismatch Message
+#### Password Mismatch Message
 
-This message confirms that a new user account has been successfully created. It may also include a welcome note, thanking the user for registering and providing a link to login or further instructions.
+This error message appears when the passwords entered in the password and password confirmation fields do not match. It prompts the user to correct the mismatch and ensures the account setup can proceed smoothly.
 
 ![Password Mismatch Message](src/images/1.2.new_user_password_not_match_msg.jpg)
+
+#### Log In Welcome Message
+
+This error message appears when the passwords entered in the password and password confirmation fields do not match. It prompts the user to correct the mismatch and ensures the account setup can proceed smoothly.
+
+![Welcome Message](src/images/1.3.new_user_created_successfully_welcome_msg.jpg)
 
 #### View/Update Info Button
 
@@ -137,16 +143,6 @@ This button enables admins to update platform-specific information for users. It
 This button allows administrators to permanently delete a user from the system. It is used when a user account is no longer needed, helping to maintain a clean and active user base.
 
 ![Delete User Button](src/images/3.0.users_page_delete_user_button.jpg)
-
-
-
-
-
-
-
-
-
-
 
 
 ---
@@ -217,7 +213,7 @@ Profile Updates: Manage profile details.
 
 The fully responsive navigation bar is available on all pages, ensuring seamless navigation across the platform. It includes key elements such as registration, sign-in, sign-out, and forms, which remain consistent on each page for a unified user experience. This feature enables users to easily move from one section to another, providing an intuitive and efficient way to explore the platform.
 
-![Navigation bar](src/images/navigation_bar.jpg)
+![Navigation bar](src/images/99.navigation_bar.jpg)
 
 ### Home Page
 
@@ -225,7 +221,7 @@ The Home Page serves as the central hub of the Publishly platform, offering user
 
 Clear navigation options and a responsive design ensure that users can easily browse and interact with the platform from any device.
 
-![Home page](src/images/home_page.jpg)
+![Home page](src/images/99.home_page.jpg)
 
 ### Explore page
 
@@ -233,7 +229,7 @@ The Explore page is designed to help users discover new and trending content on 
 
 With powerful search and filtering options, the Explore Page makes it easy to find fresh ideas and connect with new authors and topics, creating an engaging and dynamic user experience.
 
-![Explore page](src/images/explore_page.jpg)
+![Explore page](src/images/99.explore_page.jpg)
 
 ### Profile Page
 
@@ -241,7 +237,7 @@ The Profile Page allows users to manage and showcase their personal information,
 
 From the profile page, users can edit their personal details, update account settings, and manage privacy preferences. It serves as a personal hub where users can track their activity and easily navigate their contributions to the community.
 
-![Profile page](src/images/profile_page.jpg)
+![Profile page](src/images/99.profile_page.jpg)
 
 ### Join Now and Sign Up
 
@@ -275,14 +271,62 @@ Below the search bar on the right side, there is a Category menu where users can
 
 In the center of the page, the upper section includes a window where users can upload an image, select a category, and write text. By clicking the "Post" button, users can publish their desired content.
 
-![User Interface Design](src/images/user_interface_design.jpg)
+![User Interface Design](src/images/99.user_interface_design.jpg)
 
 ### User Logout button
 
 The Logout button appears on the nav bar under profil button and only after a user will have login.
 When a user clicks on the "Logout" button, user will successfully logout and redirect to home page.
 
-![User Logout button](src/images/user_logout_button.jpg)
+![User Logout button](src/images/99.user_logout_button.jpg)
+
+### Adding New Comment on Post
+
+This feature allows users to add comments to posts. A text input field is provided where users can type their comment and submit it, which will then appear below the post.
+
+![New Comment](src/images/2.0.adding_new_comment_on_post.jpg)
+
+### Update Comment on Post
+
+Users can update their comments on a post. The feature provides an option to edit an existing comment, modify the text, and save the changes, updating the comment in real-time.
+
+![Update Comment](src/images/2.1.update_comment_on_post.jpg)
+
+### Delete Confirmation Message While Deleting Post
+
+When a user attempts to delete a post, a confirmation message pops up to confirm the action. The user must either confirm or cancel the deletion, preventing accidental removal of content.
+
+![Deleting Post](src/images/2.2.delete_confirmation_while_deleting_a_post.jpg)
+
+### Explore Page Follow Button
+
+On the Explore page, the follow button allows users to follow other profiles. Clicking the button will instantly change the user's following status and reflect the action in the UI.
+
+![Follow Button](src/images/3.0.explore_page_follow_button.jpg)
+
+### Explore Page Unfollow Button
+
+The unfollow button on the Explore page lets users stop following a profile. It updates the follow status and immediately reflects the change on the interface.
+
+![Unfollow Button](src/images/3.1.explore_page_unfollow_button.jpg)
+
+### Edit Profile Window
+
+This window lets users modify their profile information, such as username, bio, and profile picture. Users can make updates and preview their changes before saving them.
+
+![Edit Profile](src/images/4.0.edit_profile.jpg)
+
+### Edit Profile Update Confirmation Message
+
+After successfully updating profile details, a confirmation message is displayed to the user, verifying that the changes have been saved successfully.
+
+![Edit Profile Confirmation Message](src/images/4.1.edit_profile_update_confirmation.jpg)
+
+### Home Page Login User Welcome Message
+
+Upon logging in, the user is greeted with a personalized welcome message on the homepage, acknowledging their successful login and providing access to their personalized feed.
+
+![User Welcome Message](src/images/5.0.home_page_login_signin_welcome_msg.jpg)
 
 ## Technologies Used
 
@@ -302,36 +346,49 @@ When a user clicks on the "Logout" button, user will successfully logout and red
 ## Design Documentation
 
 ### UI/UX Design Principles
+
 - Consistency: Reusable components ensure a uniform look and feel.
 - Responsiveness: The app adapts to various screen sizes for mobile, tablet, and desktop.
 - Immediate Feedback: React's state management provides instant updates without page reloads.
 
 ### Design Mockups
+
 Include links or images of design mockups or wireframes that represent the application's layout and functionality. This visual representation helps convey the design intent and user flow.
 
 ### Responsive Design
+
 The application is built to be responsive, employing CSS Flexbox and Grid layouts to adapt to various screen sizes, ensuring a seamless experience on mobile, tablet, and desktop devices.
 
 ## Benefits of React
 
 ### Performance
+
 React’s virtual DOM and efficient diffing algorithm significantly improve performance by minimizing unnecessary re-renders. Instead of reloading the entire page, React updates only the parts of the UI that have changed, providing a faster and smoother user experience.
 
 ### Component-based Architecture
+
 React’s component-based architecture allows for building reusable, modular components. This promotes code reusability and scalability, as individual components can be easily maintained, tested, and used across different parts of the application without duplicating code.
 
 ### Developer Productivity
+
 React enhances developer productivity by simplifying state management and UI updates through hooks like useState and useEffect. Its declarative syntax allows developers to focus on what the UI should look like, while React efficiently handles the rendering, which reduces development time and complexity.
 
 ## Reusable React Components
+
 The application is built with a focus on creating reusable React components, which ensures scalability, maintainability, and a cleaner codebase.
 
 ### Benefits of Reusability
+
 #### Code Maintenance 
+
 Having reusable components reduces code duplication, making the codebase easier to maintain and update.
+
 #### Scalability 
+
 Components can be easily reused or extended as the application grows, making development more efficient.
+
 #### React Architecture 
+
 This approach aligns with React’s architecture by breaking the UI into small, self-contained components that manage their own state and behavior.
 
 ## Wireframes
@@ -469,6 +526,7 @@ Expected Result: User is logged in successfully and redirected to the home page.
 ### User Post
 
 #### Test Case: Post Creation and Display in User Account
+
 Description:
 Verify that a user can successfully create a post by selecting a category, adding comments, and uploading images. Additionally, ensure the user can follow and like other users' content.
 
